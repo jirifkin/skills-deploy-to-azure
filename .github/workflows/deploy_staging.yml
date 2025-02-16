@@ -9,3 +9,7 @@ jobs:
     runs-on: ubuntu-latest
 
     if: contains(github.event.pull_request.labels.*.name, 'stage')
+
+    steps:
+      - run: echo "hello world"
+      
